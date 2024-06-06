@@ -1,7 +1,7 @@
 import rsa
 
 var = input("What do you want to do? ")
-message = "Hello World"
+message = ""
 with open("public.pem", "rb") as f:
     public_key = rsa.PublicKey.load_pkcs1(f.read())
 
